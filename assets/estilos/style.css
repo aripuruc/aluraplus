@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --cor-fundo: #00030C;
+    --cor-texto: #FFFFFF;
+    --cor-botao: #167BF7;
+    --cor-aux: #C0C0C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../imagens/Background.png');
+    height: 90vh;
+    background-size: cover; 
+}
+
+.apresentacao__grupo {
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 38%
+}
+
+.apresentacao__grupo__titulo {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+
+.apresentacao__grupo__img-combo {
+    width: 70%;   
+    padding: 22px; 
+}
+
+.apresentacao__grupo__assine-principal {
+    width: 90%;
+    background-color: var(--cor-botao);
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    text-align: center;  
+}
+
+.apresentacao__grupo__assine-secundario {
+    width: 90%;
+    padding: 16px;
+    border: 1px solid var(--cor-texto);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+.apresentacao__grupo__legenda {
+    color: var(--cor-aux);
+    font-size: 0.75rem;  
+}
+
+.assista {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    padding: 10% 5%;
+    
+}
+
+.global__img  {
+    width: 40%;
+}
+
+.assista__grupo__subtitulo , .recurso__grupo__subtitulo {
+    font-size: 3rem;
+    padding-bottom: 8px;
+}
+
+.chamada {
+    display: flex;
+    padding: 2% 9% 6% 6%;
+    align-items: center;
+    gap: 80px;
+}
+
+p {
+   padding-bottom: 32px;
+}
+
+.chamada__grupo__btn-assine {
+    background-color: var(--cor-botao);
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.recurso {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    padding: 10% 5%;
+    
+}
+
+.dispositivos__titulo {
+    text-align: center ;
+    padding-bottom: 40px;
+    font-size: 3rem;
+}
+
+.dispositivos__grupo__img {
+    width: 90%;
+}
+
+.dispositivos__grupo {
+    display: flex;
+    justify-content: center;
+}
+
+.tv , .computador, .celular {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.rodape {
+    text-align: center;
+    padding: 3%;
+}
+
+.rodape__logo {
+    padding: 16px;
+}
+
+.rodape__grupo__links {
+    color: var(--cor-texto);
+    padding: 0px 16px 10px 5px;   
+    text-decoration: none;
+}
+
+.rodape__grupo__infos {
+    padding: 24px;
+    font-size: 0.8rem;
+    color: var(--cor-aux);
+}
+
+@media screen and (max-width:1200px) { 
+    .apresentacao {
+        height: auto;
+    }
+
+    .apresentacao__grupo{
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .apresentacao__grupo__assine-principal, .apresentacao__grupo__assine-secundario {
+        width: 42%;
+    }
+
+    .apresentacao__grupo__titulo {
+        text-align: left;
+        width: 60%;
+    }
+
+    .apresentacao__grupo__legenda {
+        width: 40%;
+    }
+
+
+    .apresentacao__grupo__img-combo {
+        width: 40%;
+    }
+
+    .chamada {
+        flex-direction: column-reverse;
+    }
+
+    .chamada__grupo__btn-assine {
+        width: 50%;
+    }
+
+    .assista,  .recurso {
+        flex-direction: column;
+    }
+    
+    .assista__grupo, .chamada__grupo, .recurso__grupo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .global__img {
+        width: 60%;
+    }
+
+   .dispositivos__titulo {
+        width: 90%;
+        margin: auto;
+   }
+
+    .dispositivos__grupo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dispositivos__grupo__img {
+        width: 60%;
+    }
+    
+}
