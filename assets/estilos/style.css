@@ -158,7 +158,7 @@ p {
     color: var(--cor-aux);
 }
 
-@media screen and (max-width:1200px) { 
+@media screen and (max-width:550px) { 
     .apresentacao {
         height: auto;
     }
@@ -225,4 +225,44 @@ p {
         width: 60%;
     }
     
+}
+
+@media screen and (max-width:1200px){
+
+    .apresentacao__grupo {
+        margin-top: 8%;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__grupo__assine-principal, .apresentacao__grupo__assine-secundario {
+        width: 82%;
+    }
+
+    .apresentacao__grupo__titulo {
+        text-align: center;
+        width: 90%;
+    }
+
+    .apresentacao__grupo__legenda {
+        width: 90%;
+    }
+
+    .apresentacao__grupo__img-combo {
+        width: 80%;
+    }
+
+    .chamada__grupo__btn-assine {
+        width: 80%;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2.5rem;
+    }
+
+    .dispositivos__grupo {
+        padding: 4%;
+    }
+
 }
